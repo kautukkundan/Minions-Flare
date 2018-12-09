@@ -1,5 +1,6 @@
 # MINIONS
 Testing Flare with some animations
+(Run avd with --enable software-rendering if facing glitches or artefacts)
 
 #### Link to animation file
 https://www.2dimensions.com/a/kautuk/files/flare/bob-minion

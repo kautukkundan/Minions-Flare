@@ -13,19 +13,25 @@ class Minion extends StatefulWidget {
 }
 
 class _MinionState extends State<Minion> {
+
+  // Variable for controlling the animation
   String _animation = "Stand";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        
         appBar: AppBar(
           centerTitle: true,
           title: Text('Flare Minion'),
           backgroundColor: Colors.cyan,
         ),
+        
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+
+            // Container of the animation actor
             Container(
               height: 500,
               width: 500,
@@ -36,9 +42,13 @@ class _MinionState extends State<Minion> {
                 animation: _animation,
               ),
             ),
+            
+            // Row of buttons
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
+
+                // Button 1 - sets animation to "Stand"
                 MaterialButton(
                   color: Colors.grey,
                   child: Text('Stand'),
@@ -48,6 +58,8 @@ class _MinionState extends State<Minion> {
                     });
                   },
                 ),
+                
+                // Button 2 - sets animation to "Wave"                
                 MaterialButton(
                   color: Colors.grey,
                   child: Text('Wave'),
@@ -57,6 +69,8 @@ class _MinionState extends State<Minion> {
                     });
                   },
                 ),
+
+                // Button 3 - sets animation to "Dance"
                 MaterialButton(
                   color: Colors.grey,
                   child: Text('Dance'),
@@ -66,6 +80,8 @@ class _MinionState extends State<Minion> {
                     });
                   },
                 ),
+
+                // Button 4 - sets animation to "Jump"
                 MaterialButton(
                   color: Colors.grey,
                   child: Text('Jump'),
@@ -77,6 +93,10 @@ class _MinionState extends State<Minion> {
                 )
               ],
             ),
+
+            // TO-DO - Add multiple animations to start simultaneously
+            // like Jump + wave or Jump + dance
+            
           ],
         ));
   }
