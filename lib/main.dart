@@ -13,7 +13,7 @@ class Minion extends StatefulWidget {
 }
 
 class _MinionState extends State<Minion> {
-  String _animation = "Standgit ";
+  String _animation = "Stand";
 
   @override
   Widget build(BuildContext context) {
